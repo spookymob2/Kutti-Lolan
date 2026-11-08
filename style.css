@@ -16,6 +16,7 @@ nav a{text-decoration:none;padding:9px 12px;color:var(--mute);border:2px solid t
 nav a:hover{color:var(--ink);border-color:var(--line)}
 nav a.on{background:var(--acc);color:var(--on);border-color:#000;box-shadow:inset -3px -3px 0 var(--sh),inset 3px 3px 0 rgba(255,255,255,.25)}
 nav .sp{flex:1}
+nav a.adm{margin-top:14px;border:2px dashed var(--line);color:var(--ink)}
 main{flex:1;min-width:0;padding:44px clamp(18px,5vw,64px) 80px;max-width:1000px}
 h1{font-size:clamp(20px,4.2vw,38px);margin-bottom:12px}
 h2{font-size:16px}

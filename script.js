@@ -27,7 +27,7 @@ const ago=t=>{const d=(Date.now()-t)/864e5;return d<1?'Today':d<2?'Yesterday':Ma
 const safeUrl=u=>/^https?:\/\//i.test(u||'')?esc(u):'#';
 function toast(m){const t=document.createElement('div');t.className='toast';t.textContent=m;document.body.append(t);setTimeout(()=>t.remove(),1800)}
 
-function navHtml(){return `<div class="brand"><i></i>${esc(C('name'))}</div>`+PAGES.map(([r,l])=>`<a href="#${r}" class="${route==r?'on':''}">${l}</a>`).join('')+'<div class="sp"></div>'+`<a href="#admin" class="${route=='admin'?'on':''}">${admin?'Admin panel':'Admin login'}</a>`}
+function navHtml(){return `<div class="brand"><i></i>${esc(C('name'))}</div>`+PAGES.map(([r,l])=>`<a href="#${r}" class="${route==r?'on':''}">${l}</a>`).join('')+`<a href="#admin" class="adm ${route=='admin'?'on':''}">${admin?'Admin panel':'Admin login'}</a>`+'<div class="sp"></div>'}
 
 const views={
  home(){const L=live,up=L?L.online:C('status')!=='Offline',o=L?L.players:C('online'),m=L?L.max:C('max');
