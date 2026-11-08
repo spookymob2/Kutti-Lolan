@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home" data-t="">
+<main class="wrap">
+<div class="bento">
+ <div class="tile t-hero"><h1 id="hT"></h1><p class="lead" id="hL"></p>
+  <div class="row"><button class="btn" data-copy>Copy server IP</button><a class="btn g" href="shop.html">Browse ranks</a><a class="btn g" id="dc" target="_blank" rel="noopener">Discord</a></div></div>
+ <div class="tile t-status">
+  <div class="srv"><img id="logo" alt="Server logo" src=""><div><div class="st" id="st"><i class="dot"></i><span id="stT">Checking…</span></div><div class="motd" id="motd"></div></div></div>
+  <div class="big"><span id="pc">–</span> <small>players online</small></div>
+  <div class="bar"><i id="fill"></i></div><div class="note" id="ver"></div><div class="heads" id="heads"></div></div>
+ <div class="tile t-ip"><div class="lab">Java edition address</div><div class="ipv" id="ip"></div><div id="bed" class="note" style="display:none"></div><button class="btn p" data-copy>Tap to copy</button><p class="note" id="note"></p></div>
+ <div class="tile t-ann"><div class="lab">Announcement</div><div class="ann" id="ann"></div></div>
+ <div class="tile t-board"><div class="lab">Leaderboard</div><ul class="lb" id="lb"></ul><a class="btn g sm more" href="leaderboard.html">Full leaderboard</a></div>
+</div>
+<section><h2>Gamemodes</h2><p class="sub">Seven ways to play on one server. Scroll sideways.</p><div class="rail" id="rail"></div><a class="btn g more" href="modes.html">See all gamemodes</a></section>
+<section><h2>Explore</h2><div class="go">
+ <a class="tile" href="shop.html"><h3>Rank shop</h3><p>Permanent ranks with perks in every gamemode.</p></a>
+ <a class="tile" href="leaderboard.html"><h3>Leaderboard</h3><p>See who is on top right now.</p></a>
+ <a class="tile" href="join.html"><h3>How to join</h3><p>Three steps and you are in.</p></a></div></section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
